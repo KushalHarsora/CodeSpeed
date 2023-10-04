@@ -39,6 +39,10 @@ public class MainPagecpp implements ActionListener {
     public int score = 0;
 
 
+    //Times Code here
+    public int times = 2;
+
+
 
 
     //Timer code
@@ -157,37 +161,37 @@ public class MainPagecpp implements ActionListener {
 
 
         try{
-            String a = "";
+            String a = "printno.txt";
 
 
                 //cp codes
-                x =random.nextInt(5);
-                switch(x)
-                {
-                    case 0:{
-                        a="addmat.txt";
-                        break;}
+                // x =random.nextInt(5);
+                // switch(x)
+                // {
+                //     case 0:{
+                //         a="addmat.txt";
+                //         break;}
 
-                    case 1:{
-                        a="even.txt";
-                        break;
-                    }
+                //     case 1:{
+                //         a="even.txt";
+                //         break;
+                //     }
 
-                    case 2:{
-                        a="gcd.txt";
-                        break;
-                    }
+                //     case 2:{
+                //         a="gcd.txt";
+                //         break;
+                //     }
 
-                    case 3:{
-                        a="large.txt";
-                        break;
-                    }
+                //     case 3:{
+                //         a="large.txt";
+                //         break;
+                //     }
 
-                    case 4:{
-                        a="printno.txt";
-                        break;
-                    }
-                }
+                //     case 4:{
+                //         a="printno.txt";
+                //         break;
+                //     }
+                // }
 
 
 
@@ -235,10 +239,10 @@ public class MainPagecpp implements ActionListener {
             }else{
                 if(textArea2.getText().charAt(counter) == e.getKeyChar()){
                     score++;
-                }else{
-                    if (score > 0){
-                        score--;
-                    }
+                // }else{
+                //     if (score > 0){
+                //         score--;
+                //     }
                 }
 
 
@@ -249,7 +253,7 @@ public class MainPagecpp implements ActionListener {
                     counter++;
                 }else{
                     counter+=2;
-                    score++;
+                    score+=2;
                 }
             }
         }
@@ -265,28 +269,43 @@ public class MainPagecpp implements ActionListener {
     };
 
 
-
+    // Main Logic here
 
     @Override
     public void actionPerformed(ActionEvent e){
         if(e.getSource()==button) {
             String yourChoice = e.getActionCommand();
 
-            try{
+            // try{
 
-                BufferedWriter bw = new BufferedWriter(new FileWriter("saveFile.txt",true));
+            //     BufferedWriter bw = new BufferedWriter(new FileWriter("saveFile.txt",true));
 
-                bw.append(""+score);
-                bw.newLine();
-                bw.append(""+elapsedtime);
-                bw.newLine();
+            //     bw.append(""+score);
+            //     bw.newLine();
+            //     bw.append(""+elapsedtime);
+            //     bw.newLine();
 
-                bw.close();
+            //     bw.close();
+            // }
+            // catch(Exception err){}
+            if(score == 164 && counter == 164){
+                System.out.println(score);
+                System.out.println(counter);
+                frame.dispose();
+                StatsPage st= new StatsPage();
             }
-            catch(Exception err){}
-
-            frame.dispose();
-            StatsPage st= new StatsPage();
+            else if(times <= 0){
+                frame.dispose();
+            }
+            else{
+                System.out.println(score);
+                System.out.println(counter);
+                textArea.setText("");
+                counter = 0;
+                score = 0;
+                times -= 1;
+                frame.repaint();
+            }
         }
 
         if (e.getSource() == bbutton) {

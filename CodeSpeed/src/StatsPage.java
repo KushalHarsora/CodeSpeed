@@ -35,11 +35,11 @@ public class StatsPage implements ActionListener {
     public void loadData(){
         System.out.println("TEST");
         int ctime=0;
-        String cscore="This is test...";
+        String cscore="secret passcode...";
         try{
 
 
-            BufferedReader br = new BufferedReader(new FileReader("saveFile.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("code.txt"));
             int i=1;
             List<String> score = new ArrayList<String>();
             List<Integer> time = new ArrayList<Integer>();

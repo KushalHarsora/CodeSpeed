@@ -162,39 +162,39 @@ public class MainPage implements ActionListener {
         int x;
 
         try{
-            String a = "";
+            String a = "code.txt";
 
 
                 //C codes
-                x =random.nextInt(5);
-                switch(x)
-                {
-                    case 0:{
-                        a="code.txt";
-                        break;}
+                // x =random.nextInt(5);
+                // switch(x)
+                // {
+                //     case 0:{
+                //         a="code.txt";
+                //         break;}
 
-                    case 1:{
-                        a="fib1.txt";
-                        break;
-                    }
+                //     case 1:{
+                //         a="fib1.txt";
+                //         break;
+                //     }
 
-                    case 2:{
-                        a="fact2.txt";
-                        break;
-                    }
+                //     case 2:{
+                //         a="fact2.txt";
+                //         break;
+                //     }
 
-                    case 3:{
-                        a="matrix multi.txt";
-                        break;
-                    }
+                //     case 3:{
+                //         a="matrix multi.txt";
+                //         break;
+                //     }
 
-                    case 4:{
-                        a="palindrome.txt";
-                        break;
-                    }
+                //     case 4:{
+                //         a="palindrome.txt";
+                //         break;
+                //     }
 
 
-                }
+                // }
 
 
 
