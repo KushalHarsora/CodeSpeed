@@ -110,11 +110,11 @@ public class MainPagecpp implements ActionListener {
         timelabel.setFont(new Font("Verdana",Font.PLAIN,35));
         timelabel.setBorder(BorderFactory.createBevelBorder(1));
         bglabel.add(timelabel);
-        stbutton.setBounds(1000,650,200,100);
+        // stbutton.setBounds(1000,650,200,100);
         stbutton.setFocusable(false);
         stbutton.addActionListener(this);
         st.setOpaque(true);
-        st.setBounds(750,650,200,100);
+        // st.setBounds(750,650,200,100);
         bglabel.add(stbutton);
         //TextArea
         //bglabel.add(textArea);
@@ -149,13 +149,13 @@ public class MainPagecpp implements ActionListener {
         textArea2.setMargin(new Insets(10,10,10,10));
 
         //Score Label
-        scoreLabel.setBounds(1000,650,200,100);
-        scoreLabel.setForeground(Color.white);
-        scoreLabel.setBackground(Color.BLACK);
-        scoreLabel.setOpaque(true);
-        scoreLabel.setHorizontalAlignment(JLabel.CENTER);
-        scoreLabel.setFont(new Font("Verdana",Font.PLAIN,30));
-        bglabel.add(scoreLabel);
+        // scoreLabel.setBounds(1000,650,200,100);
+        // scoreLabel.setForeground(Color.white);
+        // scoreLabel.setBackground(Color.BLACK);
+        // scoreLabel.setOpaque(true);
+        // scoreLabel.setHorizontalAlignment(JLabel.CENTER);
+        // scoreLabel.setFont(new Font("Verdana",Font.PLAIN,30));
+        // bglabel.add(scoreLabel);
         //random integer generation
         int x;
 
