@@ -35,7 +35,7 @@ public class StatsPage implements ActionListener {
     public void loadData(){
         System.out.println("TEST");
         int ctime=0;
-        String cscore="secret passcode...";
+        String cscore="Hakuna Matata";
         try{
 
 

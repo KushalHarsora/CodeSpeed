@@ -65,41 +65,41 @@ public class LanguageSelect implements ActionListener {
         bb.setBounds(10,10,50,30);
         bb.setOpaque(true);
         //C
-        bglabel.add(cbutton);
-        cbutton.setVisible(true);
-        cbutton.setFocusable(false);
-        cbutton.setBounds(200,300,200,100);
-        cbutton.addActionListener(this);
-        cbutton.setBackground(Color.GREEN);
-        cb.setBounds(200,300,200,100);
-        cb.setOpaque(true);
+        // bglabel.add(cbutton);
+        // cbutton.setVisible(true);
+        // cbutton.setFocusable(false);
+        // cbutton.setBounds(200,300,200,100);
+        // cbutton.addActionListener(this);
+        // cbutton.setBackground(Color.GREEN);
+        // cb.setBounds(200,300,200,100);
+        // cb.setOpaque(true);
         //C++
         bglabel.add(cpbutton);
         cpbutton.setVisible(true);
         cpbutton.setFocusable(false);
-        cpbutton.setBounds(200,500,200,100);
+        cpbutton.setBounds(700,400,200,100);
         cpbutton.addActionListener(this);
         cpbutton.setBackground(Color.GREEN);
         cppb.setOpaque(true);
-        cppb.setBounds(200,500,200,100);
+        cppb.setBounds(700,400,200,100);
         //Java
-        bglabel.add(jabutton);
-        jabutton.setVisible(true);
-        jabutton.setFocusable(false);
-        jabutton.setBounds(width, 300,200,100);
-        jabutton.addActionListener(this);
-        jabutton.setBackground(Color.GREEN);
-        jab.setOpaque(true);
-        jab.setBounds(width, 300, 200,100);
-        //English
-        bglabel.add(ebutton);
-        ebutton.setVisible(true);
-        ebutton.setFocusable(false);
-        ebutton.setBounds(width,500,200,100);
-        ebutton.addActionListener(this);
-        ebutton.setBackground(Color.GREEN);
-        engb.setOpaque(true);
-        engb.setBounds(width,500,200,100);
+        // bglabel.add(jabutton);
+        // jabutton.setVisible(true);
+        // jabutton.setFocusable(false);
+        // jabutton.setBounds(width, 300,200,100);
+        // jabutton.addActionListener(this);
+        // jabutton.setBackground(Color.GREEN);
+        // jab.setOpaque(true);
+        // jab.setBounds(width, 300, 200,100);
+        // //English
+        // bglabel.add(ebutton);
+        // ebutton.setVisible(true);
+        // ebutton.setFocusable(false);
+        // ebutton.setBounds(width,500,200,100);
+        // ebutton.addActionListener(this);
+        // ebutton.setBackground(Color.GREEN);
+        // engb.setOpaque(true);
+        // engb.setBounds(width,500,200,100);
         //Layered Pane
         layer.setBounds(0,0,1600,900);
         layer.add(bglabel, JLayeredPane.DEFAULT_LAYER);
